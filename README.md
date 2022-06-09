@@ -15,4 +15,8 @@
 
 [Урок 10](https://kamiligo.github.io/lesson_10/ "less") - работа с препроцессорами (less и sass)
 
-[Урок 13](https://kamiligo.github.io/lesson_13/ "Pixel Perfect") - верстка формы под Pixel Perfect.
+[Урок 13](https://kamiligo.github.io/lesson_13/ "Pixel Perfect") - верстка формы под Pixel Perfect
+
+### Практика (оттачивание навыков на реальных макетах)
+
+[Урок 14](https://kamiligo.github.io/lesson_14/ "Шапка будущего сайта") - верстка сайта (Шапка)
