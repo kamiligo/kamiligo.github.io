@@ -42,9 +42,6 @@ a {
 }
 a {
   text-decoration: none;
-
-  &:hover {
-  }
 }
 
 .button {
@@ -73,8 +70,8 @@ section {
 }
 
 //! Шапка сайта
-.ph2,
-.gh2 {
+.empty-mobile-phone2,
+.empty-mobile {
   display: none;
 }
 .ph1 {
@@ -169,109 +166,119 @@ section {
     .bold();
     color: @text-feedback-color;
   }
-  &-form1 {display: none;}
-  // Бокс с формой
   &-form {
-    position: absolute;
-    right: 0.8rem;
-    width: 35.5rem;
-    height: 41rem;
+    background-color: @bg-color;
     padding: 5rem;
     text-align: center;
-    background-color: @bg-color;
-
-    // Заголовок формы
+    width: 100%;
+    height: 41rem;
+    position: relative;
+    
     &-header {
+      margin-bottom: 1.7rem;
+      display: inline-block;
       font-size: 1.8rem;
-      margin-top: -0.8rem;
-      margin-bottom: 4.2rem;
-      color: @text-feedback-color;
-
-      strong {
-        .bold();
-      }
     }
-    // Поле ввода
     &-input {
       display: block;
+      margin: 2.2rem 0;
       width: 100%;
       height: 5.4rem;
-      margin: 2.5rem 0;
-      padding-left: 1.2rem;
-      padding-top: 0.4rem;
-      font-size: 1.8rem;
-      border: 0.2rem solid @input-border-color;
-      border-radius: 0.5rem;
+      border: 2px solid @input-border-color;
     }
-    // Кнопка отправки
+    &-label {
+      // display: inline-block;
+      background-color: @bg-color;
+      padding: 1.2rem;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%) translateY(-50%);
+      font-size: 1.3rem;
+    }
     &-button {
       width: 100%;
-      padding: 2rem;
+      height: 6.5rem;
       font-size: 1.6rem;
     }
-    // Подписи над строками ввода
-    label {
-      position: absolute;
-      display: inline-block;
-      left: 50%;
-      transform: translateX(-50%) translateY(-45%);
-      padding: 0.5rem;
-      font-size: 1.3rem;
-      color: @text-input-color;
-      background-color: @bg-color;
-    }
-    // Надпись под кнопкой отправки
     &-small {
-      display: block;
+      display: inline-block;
       margin-top: 0.8rem;
       font-size: 1.2rem;
-      color: @text-input-color;
     }
-  }
-  &-workday {
-    margin-top: 6.8rem;
-    margin-left: -11rem;
-
-    &-text {
+    &-workday {
+      display: block;
+      margin-top: 2rem;
+      text-align: center;
       font-size: 1.2rem;
       color: @text-input-color;
     }
   }
+}
+.col-right {
+  padding-left: 7rem;
+}
+.ph1 {
+  text-align: right;
 }
 
 //! Медиа запросы
-
-// Для xl-экранов
-@media (min-width: 1200px) and (max-width: 1400px) {
-  .main-workday {
-    margin-right: -9rem;
-  }
-}
-// Для lg-экранов
-@media (min-width: 992px) and (max-width: 1200px) {
+//* Для 4k экранов
+@media (min-width: 2030px) {
   .main {
-    &-workday {
-      margin-right: -10.6rem;
+
+    &-form {
+
+      &-workday {
+        margin-left: 0;
+      }
     }
   }
 }
-// Для md-экранов
+//* Для xxl-экранов
+@media (min-width: 1400px) and (max-width: 2030px){
+  .main {
+
+    &-form {
+
+      &-workday {
+        margin-left: -9.8rem;
+      }
+    }
+  }
+}
+//* Для xl-экранов
+@media (min-width: 1200px) and (max-width: 1400px) {
+  .col-right {
+    padding-left: 1rem;
+  }
+}
+//* Для lg-экранов
+@media (min-width: 992px) and (max-width: 1200px) {
+  .ph1 {
+    text-align: right;
+  }
+  .col-right {
+    padding-left: 2rem;
+  }
+}
+//* Для md-экранов
 @media (min-width: 768px) and (max-width: 992px) {
-  .phone {
+  .ph1 {
     text-align: center;
+  }
+  .col-right {
+    padding: 0 17rem;
   }
   .main {
     height: 125rem;
     background-position: top right;
 
-    &-form {
-      right: 18rem;
-      margin-top: 8rem;
-    }
     &-header,
     &-subtitle,
     &-trigger {
       text-align: center;
+      margin-top: 5rem;
+      margin-bottom: 5rem;
     }
     &-header {
       margin-top: 5rem;
@@ -285,18 +292,28 @@ section {
     &-price-text {
       position: absolute;
       left: 35%;
+      top: 34%;
     }
-    &-workday {
-      margin-right: -11.8rem;
+    &-form {
 
-      &-text {
+      &-workday {
         color: @bg-allin-color;
       }
     }
   }
 }
-// Для sm-экранов
+//* Для sm-экранов
 @media (min-width: 576px) and (max-width: 767px) {
+  .col-right {
+    padding: 0 8rem;
+  }
+  .logo {
+    margin-top: 0.7rem;
+
+    img {
+      width: 17rem;
+    }
+  }
   .main {
     background-position: top right;
     height: 125rem;
@@ -310,23 +327,16 @@ section {
       margin-top: 5rem;
       margin-bottom: 7rem;
     }
-    &-form {
-      right: 9rem;
+    &-trigger {
       margin-top: 6rem;
+      margin-bottom: 6rem;
     }
-    &-workday {
-      margin-right: -10.2rem;
+    &-form {
 
-      &-text {
+      &-workday {
         color: @bg-allin-color;
       }
     }
-    &-trigger {
-      margin-top: 6rem;
-    }
-  }
-  .logo {
-    margin-top: 1rem;
   }
   .header {
     &-button {
@@ -339,25 +349,26 @@ section {
     }
   }
 }
-// Для xs-экранов
-@media (max-width: 576px) and (min-width: 0px) {
+//* Для xs-экранов
+@media (max-width: 576px) and (min-width: 460px) {
+  .col-right {
+    padding: 0 18%;
+  }
   .empty {
     height: 6rem;
     background-color: @bg-color;
     z-index: -1;
     text-align: center;
+
+    &-mobile {
+      display: flex;
+    }
   }
   .ph1 {
     display: none;
   }
-  .ph2 {
+  .empty-mobile-phone2 {
     display: inline-block;
-  }
-  .th1 {
-    text-align: right;
-  }
-  .gh2 {
-    display: flex;
   }
   .phone {
     margin-top: -0.5rem;
@@ -381,82 +392,13 @@ section {
       }
     }
   }
-  .rw1 {
-    text-align: center;
-  }
   .main {
     background-position: top left;
     background: @bg-color url(../img/bg-main.jpg) right right repeat;
     background-size: cover;
     text-align: center;
-    height: 110rem;
+    height: 97rem;
     
-    &-form {display: none;}
-    &-form1 {
-      display: inline-block;
-      width: 30rem;
-      height: 36rem;
-      margin-top: 4rem;
-      padding: 2rem;
-      background-color: @bg-color;
-
-      // Заголовок формы
-      &-header {
-        font-size: 1.8rem;
-        margin-top: -0.8rem;
-        margin-bottom: 4.2rem;
-        color: @text-feedback-color;
-
-        strong {
-          .bold();
-        }
-      }
-      // Поле ввода
-      &-input {
-        display: block;
-        width: 100%;
-        height: 5.4rem;
-        margin: 2.5rem 0;
-        padding-left: 1.2rem;
-        padding-top: 0.4rem;
-        font-size: 1.8rem;
-        border: 0.2rem solid @input-border-color;
-        border-radius: 0.5rem;
-      }
-      // Кнопка отправки
-      &-button {
-        width: 100%;
-        padding: 2rem;
-        font-size: 1.6rem;
-      }
-      // Подписи над строками ввода
-      label {
-        position: absolute;
-        display: inline-block;
-        left: 50%;
-        transform: translateX(-50%) translateY(-45%);
-        padding: 0.5rem;
-        font-size: 1.3rem;
-        color: @text-input-color;
-        background-color: @bg-color;
-      }
-      // Надпись под кнопкой отправки
-      &-small {
-        display: block;
-        margin-top: 0.8rem;
-        font-size: 1.2rem;
-        color: @text-input-color;
-      }
-    } 
-    &-workday {
-      display: block;
-      margin: 6.8rem auto 0 auto;
-      
-      &-text {
-        font-size: 1.2rem;
-        color: @text-input-color;
-      }
-    }
     &-content {
       text-align: center;
     }
@@ -469,6 +411,7 @@ section {
     }
     &-trigger {
       margin-top: 4rem;
+      margin-bottom: 4rem;
       font-size: 1.9rem;
     }
     &-header {
@@ -476,6 +419,165 @@ section {
       line-height: 2.6rem;
       font-size: 2.2rem;
       width: 27rem;
+    }
+    &-form {
+      padding: 2.7rem 2rem;
+      height: 38rem;
+    }
+  }
+}
+
+//* Для мобильных телефонов
+@media (max-width: 460px) and (min-width: 380px){
+  .col-right {
+    padding: 0 10%;
+  }
+  .empty {
+    height: 6rem;
+    background-color: @bg-color;
+    z-index: -1;
+    text-align: center;
+
+    &-mobile {
+      display: flex;
+    }
+  }
+  .ph1 {
+    display: none;
+  }
+  .empty-mobile-phone2 {
+    display: inline-block;
+  }
+  .phone {
+    margin-top: -0.5rem;
+
+    &-link {
+      font-size: 1.4rem;
+    }
+  }
+  .header {
+    text-align: center;
+
+    &-button {
+      padding: 1rem 1.5rem;
+      margin-top: 1.1rem;
+
+      &-1 {
+        display: flex;
+      }
+      &-2 {
+        display: none;
+      }
+    }
+  }
+  .main {
+    background-position: top left;
+    background: @bg-color url(../img/bg-main.jpg) right right repeat;
+    background-size: cover;
+    text-align: center;
+    height: 97rem;
+    
+    &-content {
+      text-align: center;
+    }
+    &-subtitle {
+      margin-top: 1.5rem;
+      font-size: 1.8rem;
+    }
+    &-price-text {
+      margin-top: 1.5rem;
+    }
+    &-trigger {
+      margin-top: 4rem;
+      margin-bottom: 4rem;
+      font-size: 1.9rem;
+    }
+    &-header {
+      margin: -4.8rem auto 0 auto;
+      line-height: 2.6rem;
+      font-size: 2.2rem;
+      width: 27rem;
+    }
+    &-form {
+      padding: 2.7rem 2rem;
+      height: 38rem;
+    }
+  }
+}
+//* Для супер маленьких экранов
+@media (max-width: 380px) and (min-width: 0px){
+  .col-right {
+    padding: 0 4%;
+  }
+  .empty {
+    height: 6rem;
+    background-color: @bg-color;
+    z-index: -1;
+    text-align: center;
+
+    &-mobile {
+      display: flex;
+    }
+  }
+  .ph1 {
+    display: none;
+  }
+  .empty-mobile-phone2 {
+    display: inline-block;
+  }
+  .phone {
+    margin-top: -0.5rem;
+
+    &-link {
+      font-size: 1.4rem;
+    }
+  }
+  .header {
+    text-align: center;
+
+    &-button {
+      padding: 1rem 1.5rem;
+      margin-top: 1.1rem;
+
+      &-1 {
+        display: flex;
+      }
+      &-2 {
+        display: none;
+      }
+    }
+  }
+  .main {
+    background-position: top left;
+    background: @bg-color url(../img/bg-main.jpg) right right repeat;
+    background-size: cover;
+    text-align: center;
+    height: 97rem;
+    
+    &-content {
+      text-align: center;
+    }
+    &-subtitle {
+      margin-top: 1.5rem;
+      font-size: 1.8rem;
+    }
+    &-price-text {
+      margin-top: 1.5rem;
+    }
+    &-trigger {
+      margin-top: 4rem;
+      margin-bottom: 4rem;
+      font-size: 1.9rem;
+    }
+    &-header {
+      margin: -4.8rem auto 0 auto;
+      line-height: 2.6rem;
+      font-size: 2.2rem;
+      width: 27rem;
+    }
+    &-form {
+      padding: 2.7rem 2rem;
+      height: 38rem;
     }
   }
 }

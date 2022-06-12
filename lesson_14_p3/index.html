@@ -3,25 +3,24 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/bootstrap.css" />
     <link rel="stylesheet" href="css/style.css " />
     <title>Автоматизированная штукатурка стен</title>
   </head>
   <body>
     <div class="empty">
-      <!-- ДОП. СТРОКА ДЛЯ МОБИЛЬНЫХ УСТРОЙСТВ -->
-      <div class="row gh2">
+      <!-- !ДОП. СТРОКА ДЛЯ МОБИЛЬНЫХ УСТРОЙСТВ -->
+      <div class="row empty-mobile">
         <div class="col-6">
-          <div class="phone ph2">
+          <div class="phone empty-mobile-phone2">
             <a class="phone-link" href="#">+7 495 771 05 08</a>
           </div>
         </div>
 
         <div class="col-6">
           <div class="wrap">
-            <div class="wrap-block ph2">
-              <button class="button header-button th1">
+            <div class="wrap-block empty-mobile-phone2">
+              <button class="button header-button">
                 <span class="header-button-1">Консультация</span
                 ><span class="header-button-2">Получить консультацию</span>
               </button>
@@ -63,8 +62,9 @@
         </div>
 
         <div class="main-content">
-          <div class="row rw1">
-            <div class="col-xl-6 col-lg-5 col-12">
+          <div class="row">
+
+            <div class="col-xl-6 col-lg-6 col-12">
               <h1 class="main-header">
                 <strong>Автоматизированная штукатурка стен</strong>
               </h1>
@@ -77,59 +77,33 @@
                 от <strong>300</strong> руб/м<sup>2</sup>
               </span>
               <strong class="main-trigger">Оплата по факту!</strong>
-              <div class="main-form1">
-                <h2 class="main-form1-header">
-                  Для расчёта точной стоимости<br />
-                  закажите <strong>выезд замерщика</strong>
-                </h2>
-                <form action="#">
-                  <label for="#">Ваше имя</label>
-                  <input type="name" class="main-form1-input" />
-                  <label for="#">Номер телефона</label>
-                  <input type="number" class="main-form1-input" />
-                  <button class="button main-form1-button" type="submit">
-                    Оставить заявку
-                  </button>
-                  <small class="main-form1-small"
-                    >Приедем в день обращения *</small
-                  >
-                </form>
-                <div class="main-workday">
-                  <small class="main-workday-text">
-                    * - выезды на замер осуществляются <br />рабочие дни Пн-Пт с
-                    9:00 до 18:00
-                  </small>
-                </div>
-              </div>
             </div>
-
-            <div
-              class="col-xl-4 offset-xl-2 col-lg-5 offset-lg-1 col-12 offset-0"
-            >
+            
+            <div class="col-xl-4 offset-xl-2 col-lg-5 offset-lg-1 col-sm-12 offset-sm-0 col-12 offset-0 col-right">
               <div class="main-form">
                 <h2 class="main-form-header">
-                  Для расчёта точной стоимости<br />
-                  закажите <strong>выезд замерщика</strong>
+                  Для расчёта точной стоимости<br> закажите <strong>выезд замерщика</strong>
                 </h2>
                 <form action="#">
-                  <label for="#">Ваше имя</label>
-                  <input type="name" class="main-form-input" />
-                  <label for="#">Номер телефона</label>
-                  <input type="number" class="main-form-input" />
+                  <label class="main-form-label" for="#">Ваше имя</label>
+                  <input class="main-form-input" type="name" />
+
+                  <label class="main-form-label" for="#">Номер телефона</label>
+                  <input class="main-form-input" type="number" />
+
                   <button class="button main-form-button" type="submit">
                     Оставить заявку
                   </button>
-                  <small class="main-form-small"
-                    >Приедем в день обращения *</small
-                  >
-                </form>
-                <div class="main-workday">
-                  <small class="main-workday-text">
-                    * - выезды на замер осуществляются <br />рабочие дни Пн-Пт с
-                    9:00 до 18:00
+
+                  <small class="main-form-small">
+                    Приедем в день обращения *
                   </small>
-                </div>
+                </form>
               </div>
+              <small class="main-form-workday">
+                * - выезды на замер осуществляются <br />рабочие дни Пн-Пт с
+                9:00 до 18:00
+              </small>
             </div>
           </div>
         </div>
