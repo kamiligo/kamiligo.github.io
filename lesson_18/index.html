@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Всплывающие окна</title>
+</head>
+<body>
+  <h1>Всплывающие окна</h1>
+
+  <div class="container">
+
+    <!-- * Кнопка с вызовом всплывающего окна -->
+    <button type="button" class="btn btn-primary modal-button" data-bs-toggle="modal" data-bs-target="#my-modal">
+      Удалить файл
+    </button>
+
+    <!-- * Cамо модальное окно -->
+    <div class="modal fade" id="my-modal" tabindex="-1" aria-labelledby="my-modal-label" aria-hidden="true">
+      <!-- * Диалоговое окно -->
+      <div class="modal-dialog">
+        <!-- * Содержимое всплывающего окна -->
+        <div class="modal-content">
+          <!-- * Заголовок -->
+          <div class="modal-header">
+            <img src="img/exclamation-triangle-fill.svg" alt="Warning">
+            <h5 class="modal-title" id="exampleModalLabel">Удаление файла</h5>
+            <!-- * Кнопка для закрытия в.о. -->
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <!-- * Контент -->
+          <div class="modal-body">
+            <p class="my-modal-text">Вы действительно хотите <span class="delete">удалить</span> файл?</p>
+          </div>
+          <!-- * Нижняя часть -->
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary modal-footer-nobtn">« Нет</button>
+            <button type="button" class="btn btn-primary modal-footer-yesbtn">Да »</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+    
+    
+  <!-- ! Подключение библиотеки jQuery -->
+  <script src="js/jquery-3.6.0.min.js"></script>
+  <!-- ! Подключение библиотеки bootstrap -->
+  <script src="js/bootstrap.js"></script>
+
+</body>
+</html>
