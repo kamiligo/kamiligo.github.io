@@ -1,0 +1,93 @@
+body {
+  font-family: "Arial";
+  background: url(../img/bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.main-header {
+  margin-top: 100px;
+  margin-bottom: 200px;
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 1.5;
+}
+.form {
+  width: 320px;
+  height: 370px;
+  /* background-color: #fafdfd; */
+  border: 2px solid #cfdede;
+  background-color: white;
+  margin: auto;
+}
+.input-form {
+  display: block;
+}
+.form-name {
+  position: absolute;
+  margin-top: -6px;
+  width: 149px;
+  height: 28px;
+  margin-left: 30px;
+  margin-bottom: -23px;
+  box-shadow: 0 0 2px gray;
+  background-color: #01b3b3;
+  padding-top: 6px; 
+  padding-left: 9px;
+}
+.form-input-header {
+  font-size: 12px;
+  font-weight: bold;
+}
+.form-name .form-header {
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+.form-box {
+  padding: 55px 31px 0 29px;
+}
+input {
+  width: 262px;
+  height: 32px;
+  padding: 10px 10px 10px 12px;
+  background: url(../img/bg.png);
+  border: 2px solid #cfdede;
+  outline: none;
+}
+input::placeholder {
+  color: #bac0c0;
+  font-size: 12px;
+  font-style: italic;
+}
+.email-text {
+  margin-bottom: 11px;
+  margin-top: -2px;
+}
+.password-1 {
+  margin-bottom: 14px;
+  margin-top: 17px;
+}
+.password-2 {
+  margin-bottom: 14px;
+  margin-top: 16px;
+}
+.register-btn {
+  width: 260px;
+  height: 45px;
+  margin-top: 33px;
+  background: linear-gradient(#01c5c5a0, #01b1b1);
+  border: none;
+  outline: none;
+  font-size: 16px;
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+  border-radius: 6px;
+}
+
+.empty {
+  height: 200px;
+}
