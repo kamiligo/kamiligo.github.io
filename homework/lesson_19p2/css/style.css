@@ -1,0 +1,84 @@
+@import url(fonts.css);
+
+/* ! Основные свойства */
+body {
+  background-image: url(../img/bg.jpg);
+  font-family: 'Ubuntu-Regular', sans-serif;
+}
+.container {
+  height: auto;
+  padding: 0 5%;
+}
+.main-header {
+  margin: 80px auto 53px auto;
+}
+.title {
+  text-align: center;
+  text-transform: uppercase;
+  color: #0bbaf0;
+}
+.main-title {
+  font-family: 'Ubuntu-Bold', sans-serif;
+  font-size: 36px;
+}
+.main-subtitle {
+  font-size: 24px;
+}
+.main-subtitle::after {
+  width: 100px;
+  border-bottom: 1px solid #cbcdce;
+}
+
+/* ! Аккордеон */
+.accordion {
+  margin: auto;
+  width: 862px;
+}
+.accordion-body {
+  padding: 20px 25px 38px 25px;
+}
+/* Убираем скругленные углы */
+.accordion-item:first-of-type .accordion-button, .accordion-item:last-of-type .accordion-button.collapsed {
+  border-radius: initial;
+}
+/* Убираем обводку при выборе элемента */
+.accordion-button:not(.collapsed) {
+  background-color: #0bbaf0;
+  color: #fff;
+}
+.accordion-button {
+  display: block;
+  text-align: center;
+  font-size: 23.2px;
+  border-radius: initial;
+  background-color: #0bbaf0;
+  color: #fff;
+}
+/* Убираем обводку при фокусе на элементе */
+.accordion-button:focus {
+  box-shadow: none;
+}
+
+.collapsing {
+  border-bottom: 4px solid #dcdcdc;
+}
+.show {
+  border-bottom: 4px solid #dcdcdc;
+}
+.accordion-collapse {
+  margin: 0 13px 0 13px;
+  border-left: 4px solid #dcdcdc;
+  border-right: 4px solid #dcdcdc;
+  background-color: #fff;
+  border-radius: 0 0 8px 8px;
+}
+.accordion-body p {
+  font-size: 22px;
+  color: #535353;
+}
+.accordion-item {
+  margin-bottom: 4px;
+  background-color: transparent;
+  border: none;
+}
+
