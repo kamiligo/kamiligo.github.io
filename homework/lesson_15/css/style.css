@@ -1,0 +1,29 @@
+@import url(fonts.css);
+
+.text-box{
+	padding-top: 2rem;
+}
+.result {
+	margin-bottom: 0;
+	margin-top: 3rem;
+}
+.fonts {
+	font-size: 2rem;
+	text-align: center;
+	padding: 2rem;
+}
+small {
+	font-size: 1.3rem;
+}
+.open-sans {
+	font-family: 'Open Sans';
+}
+.bebas {
+	font-family: 'Bebas Neue';
+}
+.lato {
+	font-family: 'Lato';
+}
+.lobster {
+	font-family: 'Lobster';
+}
