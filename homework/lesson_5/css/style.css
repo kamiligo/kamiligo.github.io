@@ -1,0 +1,100 @@
+body {
+	background-color: rgba(204, 255, 232, 0.2);
+}
+
+h1 {
+	text-align: center;
+	font-size: 70px;
+	text-transform: uppercase;
+}
+
+#contents {
+	margin-left: 50px;
+}
+
+h2 {
+	font-size: 35px;
+	color: rgba(232, 58, 116, 0.8);
+}
+
+#pagelist {
+	font-size: 25px;
+}
+
+h3 {
+	font-size: 25px;
+	color: rgba(106, 123, 212, 0.8);
+}
+
+p {
+	max-width: 600px;
+	text-align: justify;
+	margin-left: 455px;
+	margin-bottom: 100px;
+	border: 5px groove rgba(87, 64, 46, 0.2);
+	padding: 5px;
+	letter-spacing: 1px;
+	background-color: #ffffff;
+}
+
+h2, h3 {
+	text-align: center;
+}
+
+#oglav {
+	text-align: left;
+	font-size: 50px;
+	text-decoration: underline;
+}
+
+#linktop {
+	margin-left: 658px;
+	font-size: 25px;
+}
+
+.chapters {
+	text-decoration: underline;
+	margin-bottom: 80px;
+	display: inline-block;
+	margin-left: 46%;
+}
+
+ul > li {
+	margin-bottom: 10px;
+	letter-spacing: 3px;
+}
+
+#italic {
+	font-style: italic;
+}
+
+#imp1 {
+	font-weight: bold;
+}
+
+#underline {
+	text-decoration: underline;
+}
+
+.buttonup {
+	font-size: 30px;
+	margin-left: 425px;
+	color: ff0000;
+}
+
+a {
+	text-decoration: none;
+
+}
+
+a:visited {
+	color: #bcbabf;
+}
+
+a:link {
+	color: #bcbabf;
+}
+
+a:hover {
+	color: #6333de;
+}
