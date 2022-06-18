@@ -37,6 +37,9 @@
 
 [Урок 14.3](https://kamiligo.github.io/homework/lesson_14_p3/ "Адаптация главного содержания") - Верстка сайта (Адаптация Шапки + main-a)
 
-[Урок 14.4](https://kamiligo.github.io/homework/lesson_14_p4/ "Блок с преимуществами") - Добавил секцию с Преимуществами (Адаптация + Slider)
+[Урок 14.4](https://kamiligo.github.io/homework/lesson_14_p4/ "Блок с преимуществами") - Сверстал секцию с Преимуществами (Адаптация + Slider)
 
-[Урок 14.5](https://kamiligo.github.io/homework/lesson_14_p5/ "Всплывающее окно") - реализовал высплывающее окно для "Консультации"
+[Урок 14.5](https://kamiligo.github.io/homework/lesson_14_p5/ "Всплывающее окно") - Реализовал высплывающее окно для "Консультации"
+
+[Урок 14.6](https://kamiligo.github.io/homework/lesson_14_p6/ "Блок с ценами") - Сверстал и адаптировал секцию с ценами.
+
