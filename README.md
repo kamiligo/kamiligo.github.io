@@ -29,6 +29,8 @@
 
 [Урок 19.2](https://kamiligo.github.io/homework/lesson_19p2/ "Аккордеон") - Знакомство с аккордеонами от bootstrap.
 
+[Урок 20](https://kamiligo.github.io/homework/lesson_19p2/ "Анимация") - Добавление анимации к 19 уроку.
+
 ### Практика (оттачивание навыков на реальных макетах)
 
 [Урок 14.1](https://kamiligo.github.io/homework/lesson_14/ "Шапка будущего сайта") - Верстка сайта (Шапка)
