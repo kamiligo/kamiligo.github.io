@@ -45,3 +45,5 @@
 
 [Урок 14.6](https://kamiligo.github.io/homework/lesson_14_p6/ "Блок с ценами") - Сверстал и адаптировал секцию с ценами.
 
+[Урок 14.7](https://kamiligo.github.io/homework/lesson_14_p7/ "Отзывы") - Добавил секцию с отзывами + сверстал 2 слайдера (slick + fotorama).
+
