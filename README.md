@@ -31,6 +31,8 @@
 
 [Урок 20](https://kamiligo.github.io/homework/lesson_20/ "Анимация") - Добавление анимации к 19 уроку.
 
+[Урок 21](https://kamiligo.github.io/homework/lesson_21/ "Видео-фон") - Оформление видео-фона (видео взято с сайта coverr.co).
+
 ### Практика (оттачивание навыков на реальных макетах)
 
 [Урок 14.1](https://kamiligo.github.io/homework/lesson_14/ "Шапка будущего сайта") - Верстка сайта (Шапка)
