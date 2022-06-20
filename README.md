@@ -33,6 +33,8 @@
 
 [Урок 21](https://kamiligo.github.io/homework/lesson_21/ "Видео-фон") - Оформление видео-фона (видео взято с сайта coverr.co).
 
+[Урок 22](https://kamiligo.github.io/homework/lesson_22/ "Параллакс") - Знакомство с эффектом "Параллакс" (parallax + rellax)
+
 ### Практика (оттачивание навыков на реальных макетах)
 
 [Урок 14.1](https://kamiligo.github.io/homework/lesson_14/ "Шапка будущего сайта") - Верстка сайта (Шапка)
