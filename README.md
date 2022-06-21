@@ -21,9 +21,9 @@
 
 [Урок 16](https://kamiligo.github.io/homework/lesson_16/ "Эффекты при наведении") - Отработка эффектов при наведении (Псевдоклассы)
 
-[Урок 17](https://kamiligo.github.io/homework/lesson_17/ "Слайдер для фотографий") - Знакомство со слайдером Fotorama
+[Урок 17](https://kamiligo.github.io/homework/lesson_17/ "Слайдер для фотографий") - Знакомство со слайдером Fotorama.
 
-[Урок 18](https://kamiligo.github.io/homework/lesson_18/ "Всплывающее окно") - Использование всплывающего окна (от bootstrap)
+[Урок 18](https://kamiligo.github.io/homework/lesson_18/ "Всплывающее окно") - Использование всплывающего окна (от bootstrap).
 
 [Урок 19.1](https://kamiligo.github.io/homework/lesson_19p1/ "Форма регистрации с переключением по вкладкам") - Отработка табов от bootstrap на форме входа и регистрации.
 
@@ -33,7 +33,9 @@
 
 [Урок 21](https://kamiligo.github.io/homework/lesson_21/ "Видео-фон") - Оформление видео-фона (видео взято с сайта coverr.co).
 
-[Урок 22](https://kamiligo.github.io/homework/lesson_22/ "Параллакс") - Знакомство с эффектом "Параллакс" (parallax + rellax)
+[Урок 22](https://kamiligo.github.io/homework/lesson_22/ "Параллакс") - Знакомство с эффектом "Параллакс" (parallax + rellax).
+
+[Урок 23](https://kamiligo.github.io/homework/lesson_23/ "Карты") - Добавление интерактивных карт (Яндекс.Карты - конструктор).
 
 ### Практика (оттачивание навыков на реальных макетах)
 
