@@ -1,0 +1,70 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+a {
+  color: #fff;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.493);
+}
+a:hover {
+  color: #fff;
+}
+.contact {
+  position: absolute;
+  top: 0;
+  left: 30%;
+  padding: 60px;
+  width: 380px;
+  height: 430px;
+  text-align: center;
+  background-color: #c60b0b;
+  color: #fff;
+  z-index: 999;
+}
+
+.contact-header {
+  margin-bottom: 22px;
+  font-size: 30px;
+}
+.contact-text {
+  margin-bottom: 40px;
+  font-size: 18px;
+}
+
+.footer {
+  height: 95px;
+  padding: 20px;
+  text-align: center;
+}
+.footer-subtitle {
+  margin-bottom: 0;
+  margin-top: 8px;
+  color: #7a7a7a;
+  font-size: 14px;
+  line-height: 18px;
+}
+.logo img {
+  vertical-align: top;
+  margin-top: -4px;
+  margin-right: 10px;
+}
+.logo label {
+  line-height: 18px;
+}
+.phone {
+  margin-top: -5px;
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+.phone-link {
+  color: #000;
+}
+.phone-link:hover {
+  color: #000;
+}
+
+.address {
+  line-height: 14px;
+  font-size: 14px;
+}
